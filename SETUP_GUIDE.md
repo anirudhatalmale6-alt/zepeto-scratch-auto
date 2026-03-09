@@ -86,6 +86,12 @@ pip install opencv-python numpy
 ### Options / オプション:
 
 ```
+# Run with live monitor window (default) — ライブモニター付き（デフォルト）
+python zepeto_scratch_auto.py
+
+# Run without monitor window — モニターなし（ターミナルのみ）
+python zepeto_scratch_auto.py --no-gui
+
 # Run 10 cycles then stop (10回で停止)
 python zepeto_scratch_auto.py --loops 10
 
@@ -96,7 +102,16 @@ python zepeto_scratch_auto.py --delay 1
 python zepeto_scratch_auto.py -v
 ```
 
-### To stop: Press **Ctrl+C** (停止するには Ctrl+C を押してください)
+### Monitor Window / モニターウィンドウ:
+When running with the monitor (default), a window appears on your PC showing:
+- **Live phone screen** — リアルタイムのスマホ画面
+- **Current status** — 現在のステータス（広告視聴中、スクラッチ中など）
+- **Scratch counter** — スクラッチ回数
+- **Runtime** — 実行時間
+- **Activity log** — アクティビティログ
+
+Press **Q** in the monitor window or **Ctrl+C** in terminal to stop.
+（モニターで「Q」キー、またはターミナルで Ctrl+C で停止）
 
 ---
 
